@@ -5,14 +5,20 @@ date: 2024-09-16
 category: [Data Business & Recommendation System]
 ---
 
-hello
-
 ## 공부할 내용
 
-사용할 두 교재:
-'파이썬 데이터 분석 실무 테크닉 100'과 '통계 101 x 데이터 분석'
+### 사용할 두 교재:
+
+- 파이썬 데이터 분석 실무 테크닉 100
+- 통계 101 x 데이터 분석
+
 ![textbook1](/public/img/240916/textbook.png)
 ![textbook2](/public/img/240916/textbook2.png)
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="/public/img/240916/textbook.png" alt="textbook1" style="width: 45%;">
+    <img src="/public/img/240916/textbook2.png" alt="textbook2" style="width: 45%;">
+</div>
 
 두 교재를 통해서 데이터 비즈니스와 추천시스템에 대해서 공부할 예정이다. 데이터 비즈니스는 데이터를 활용해 비즈니스 가치를 창출하고 더 나은 의사결정을 지원하는 분야이며, 추천시스템은 사용자의 취향과 필요를 분석해 개인화된 제안을 제공하는 기술이다.
 
