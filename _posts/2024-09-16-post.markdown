@@ -9,7 +9,8 @@ hello
 
 ## 공부할 내용
 
-사용할 두 교재: '파이썬 데이터 분석 실무 테크닉 100'과 '통계 101 x 데이터 분석'
+사용할 두 교재:
+'파이썬 데이터 분석 실무 테크닉 100'과 '통계 101 x 데이터 분석'
 ![textbook1](/public/img/240916/textbook.png)
 ![textbook2](/public/img/240916/textbook2.png)
 
