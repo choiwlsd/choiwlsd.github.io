@@ -152,7 +152,7 @@ category: [Data Business & Recommendation System]
     범위의 넓이.
 
     연속변수의 히스토그램은 _구간폭을 어떻게 설정하는지에 따라_ 인상이 달라진다는 한계가 있다.
-    [Histogram by Bin Width](/public/img/240916/HistogramOfContinuousVar.png)
+    ![Histogram by Bin Width](/public/img/240916/HistogramOfContinuousVar.png)
 
 - Histogram of Categorical Variable
   **가로축에는 각 범주를**, 세로축에는 각 범주에 속하는 개수.
