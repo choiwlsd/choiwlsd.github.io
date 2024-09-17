@@ -180,3 +180,5 @@ category: [Data Business & Recommendation System]
 
 <br/>
 > 📌파이썬 데이터 분석 실무 테크닉 100 **Chapter 1-2**
+
+[실습내용](https://github.com/choiwlsd/KHUDA/blob/main/track/DBRS_Week1.ipynb)
