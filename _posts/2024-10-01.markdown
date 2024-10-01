@@ -2,7 +2,7 @@
 layout: post
 title: "Right test on Data"
 date: 2024-10-01
-category: [In-depth exploration]
+category: In-depth exploration
 ---
 
 # 데이터의 성질에 맞는 검정 방법을 선택하는 것이 왜 중요한가?
