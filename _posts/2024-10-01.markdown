@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[DB & RS] Week 3"
+title: "Right test on Data"
 date: 2024-10-01
 category: [In-depth exploration]
 ---
