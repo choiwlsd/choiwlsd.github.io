@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NotYet"
+title: "Design of Loss Function"
 date: 2024-10-08
 category: [In-depth exploration]
 ---
