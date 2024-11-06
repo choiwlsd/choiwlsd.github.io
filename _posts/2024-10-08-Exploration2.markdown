@@ -2,7 +2,7 @@
 layout: post
 title: "Design of Loss Function"
 date: 2024-10-08
-category: [In-depth exploration]
+category: [Exploration]
 ---
 
 # 손실 함수의 종류 및 커스텀 Loss Function
