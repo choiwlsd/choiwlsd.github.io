@@ -1,0 +1,8 @@
+---
+layout: post
+title: "[DB & RS] Week 6"
+date: 2024-11-10
+category: [Data Business & Recommendation System]
+---
+
+> 📌통계 101 X 데이터 분석 **Chapter 12-13**
