@@ -32,9 +32,11 @@ highlighter: rouge
 svg:
   optimize: true
 # Build settings
-# theme: minima
-highlighter-theme: monokai
-date_format: "%Y-%M-%D"
+theme: jekyll-theme-gitbook
+highlighter-theme: rouge
+markdown: kramdown
+
+date_format: "%Y-%m-%D"
 plugins:
   - jekyll-feed
 category_dir: category/
