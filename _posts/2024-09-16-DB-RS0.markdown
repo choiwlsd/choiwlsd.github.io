@@ -13,8 +13,8 @@ category: [Data Business & Recommendation System]
 - 통계 101 X 데이터 분석
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="/public/img/240916/textbook.png" alt="textbook1" style="width: 45%;">
-    <img src="/public/img/240916/textbook2.png" alt="textbook2" style="width: 40%;">
+    <img src="/assets/images/240916/textbook.png" alt="textbook1" style="width: 45%;">
+    <img src="/assets/images/240916/textbook2.png" alt="textbook2" style="width: 40%;">
 </div>
 
 <br/>

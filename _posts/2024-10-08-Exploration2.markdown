@@ -11,7 +11,7 @@ category: [Exploration]
 
 MSE는 회귀 문제에서 자주 사용되는 손실함수. 예측값과 실제값의 차이를 제곱한 후, 그 평균을 구한다. 평균 제곱 오차의 값이 작을수록 모델의 예측이 실제값에 가까운 것을 의미한다. 다시 말해, MSE 값이 작을수록 알고리즘의 성능이 좋다고 볼 수 있다.
 
-<img src='/public/img/241008/MSE.png' alt='Equation of MSE'>
+<img src='/assets/images/241008/MSE.png' alt='Equation of MSE'>
 
 - MSE는 오류를 제곱하기 때문에 큰 오류에 더 민감하게 반응하여 큰 오차를 줄이는 데 유리하다.
 - 그래프로 표현해 본다고 가정하면, MSE는 오차가 커질수록 손실 함수 값이 빠르게 증가하는 특징을 가지고 있다.
@@ -24,7 +24,7 @@ MSE는 회귀 문제에서 자주 사용되는 손실함수. 예측값과 실제
 
 아래의 수식은 이진 분류의 경우의 수식을 의미한다.
 
-<img src='/public/img/241008/Cross-Entropy Loss.png' alt='Equation of Cross-Entropy Loss'>
+<img src='/assets/images/241008/Cross-Entropy Loss.png' alt='Equation of Cross-Entropy Loss'>
 
 예측확률과 실제 레이블을 가지고 계산을 하며, 크로스 엔트로피 손실함수는 모델이 실제 레이블에 대해 높은 확률을 예측할수록 값이 작아진다.
 

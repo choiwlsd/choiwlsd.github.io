@@ -114,7 +114,7 @@ category: [Exploration]
 
 ### t-Test와 Welch's t-Test의 차이
 
-<img src="/public/img/241001/Diff of 2 t-test.png" alt="Difference between t-Test and Welch's t-Test">
+<img src="/assets/images/241001/Diff of 2 t-test.png" alt="Difference between t-Test and Welch's t-Test">
 
 위 그림에서의 기호들:
 

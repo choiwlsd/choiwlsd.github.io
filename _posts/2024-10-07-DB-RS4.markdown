@@ -33,7 +33,7 @@ category: [Data Business & Recommendation System]
 > - 통계학의 회귀분석에서 독립변수들 간에 강한 상관관계가 나타나는 문제이다.
 > - 다중공선성이 있다면 회귀계수의 추정오차가 커지는 문제가 발생할 가능성이 있다.
 > - 가장 간단하게 다중공선성을 처리하는 방법은 상관성이 높은 x 인자 중에서 하나 또는 일부를 분석 대상에서 제외하는 방법이다.
->   <img src='/public/img/241007/Multicollinearity.png' alt="Multicollinearity">
+>   <img src='/assets/images/241007/Multicollinearity.png' alt="Multicollinearity">
 
 ### 범주형 변수를 설명변수로
 
@@ -43,7 +43,7 @@ category: [Data Business & Recommendation System]
 
 범주형 변수에서 0과 1로 상태를 알려주도록 사용하는 이진 변수이다. 범주의 개수가 2개일 때는 각 범주에 대해 가변수로 0 또는 1을 할당하고 회귀모형에 적용한다.
 
-<img src="/public/img/241007/HowToUseDummyVariable.png" alt="How to Use Dummy Variable">
+<img src="/assets/images/241007/HowToUseDummyVariable.png" alt="How to Use Dummy Variable">
 
 위는 0과 1로 상태를 알려주는 가변수의 특징을 따라 가변수를 어떻게 설정하면 되는지를 알려주는 그림이다.
 
@@ -80,7 +80,7 @@ VIF값은 각 설명변수마다 산출된다.
 
 > 💡선형모형이라는 말은 파라미터에 관해 선형이라는 뜻이다.
 
-<img src="/public/img/241007/ExampleOfNonLinearReg.png" alt="Example of Non-linear Regression">
+<img src="/assets/images/241007/ExampleOfNonLinearReg.png" alt="Example of Non-linear Regression">
 
 ### 일반선형모형 General Linear Model
 
@@ -105,7 +105,7 @@ VIF값은 각 설명변수마다 산출된다.
 ## Logistic Regression 로지스틱 회귀
 
 일반화 선형 모형의 일종이며, 반응변수가 값이 2개인 범주형 변수일 때 사용하는 회귀방법이다. **범주 하나가 일어날 확률을 p로 두고, 설명변수 x가 바뀌었을 때 p가 얼마나 달라지는지를 조사**한다. 여기서 p는 **이항분포**의 파라미터에 해당한다.
-<img src="/public/img/241007/LogisticRegression.png" alt="Logistic Regression">
+<img src="/assets/images/241007/LogisticRegression.png" alt="Logistic Regression">
 
 ### 이항분포
 

@@ -20,7 +20,7 @@ category: [Data Business & Recommendation System]
 ### 데이터 유형에 따른 분석 방법
 
 2개 변수 사이의 관계
-<img src="/public/img/240930/HowToAnalyze.png" alt="HowToAnalyze" >
+<img src="/assets/images/240930/HowToAnalyze.png" alt="HowToAnalyze" >
 왼쪽은 범주형 데이터마다 양적 데이터가 달라지는지를 조사할 때를, 가운데는 범주형 데이터끼리의 관계를 조사할 때를, 오른쪽은 양적 데이터끼리의 관계를 조사할 때를 나타낸 것.
 
 - t검정은 양적 변수와 질적 변수라는 2가지 변수 사이의 관계를 조사한다.
@@ -48,7 +48,7 @@ category: [Data Business & Recommendation System]
 
 모집단분포가 특정 분포라고 가정할 수 없는 경우(좌우 비대칭 분포나 이상값이 있는 분포라면 평균과 표준편차의 값이 도움이 되지 않음), 평균이나 표준편차 등의 parameter(모수)에 기반을 두지 않는 비모수검정으로 분류되는 방법을 이용한다.
 
-<img src="/public/img/240930/NormalityofData.png" alt="Noramlity of Data">
+<img src="/assets/images/240930/NormalityofData.png" alt="Noramlity of Data">
 
 #### 등분산성
 
@@ -66,7 +66,7 @@ category: [Data Business & Recommendation System]
 > - 대립가설 "모집단의 평균은 μ=00이 아니다"
 
 위의 내용을 전제로 하여 검증한다.
-<img src="/public/img/240930/일표본t검정의 원리.png" alt="Priciple of One Sample t-test">
+<img src="/assets/images/240930/일표본t검정의 원리.png" alt="Priciple of One Sample t-test">
 95% 신뢰구간을 구하는 것과 α=0.05의 유의 수준으로 귀무가설을 검정하는 것은 x̄에서 생각할지 귀무가설 μ=00에서 생각할지의 차이뿐이기 때문에, 동전의 양면과 같은 관계이다.
 
 #### 이표본 t검정
@@ -84,7 +84,7 @@ t검정은 모수검정으로 분류되는 검정방법이기 때문에 데이�
 
 #### 대응관계가 없는 검정과 대응관계가 있는 검정
 
-<img src="/public/img/240930/대응관계 유무에 따른 검정.png" alt="Test depending on Correspondence">
+<img src="/assets/images/240930/대응관계 유무에 따른 검정.png" alt="Test depending on Correspondence">
 
 #### 정규성 조사
 
@@ -120,7 +120,7 @@ t검정과 분산분석에는 데이터가 분산이 같은 모집단으로부�
 > - 귀무가설 "2개 모집단의 위치가 같다"
 > - 대립가설 "2개 모집단의 위치가 다르다"
 
-<img src="/public/img/240930/Wilcoxon.png" alt="Wilcoxon rank sum test">
+<img src="/assets/images/240930/Wilcoxon.png" alt="Wilcoxon rank sum test">
 
 #### 맨-휘트니 U 검정
 
@@ -135,13 +135,13 @@ t검정과 분산분석에는 데이터가 분산이 같은 모집단으로부�
 ### 분산분석
 
 **3개 이상 집단의 평균값을 비교하는 방법**을 분산분석(ANOVA, Analysis of variance)라 한다.
-<img src="/public/img/240930/ANOVA.png" alt="ANOVA">
+<img src="/assets/images/240930/ANOVA.png" alt="ANOVA">
 
 > - 귀무가설 "모든 집단의 평균이 같다"
 > - 대립가설 "적어도 한 쌍에는 차이가 있다."
 
 분산분석의 원리:
-<img src="/public/img/240930/Principle of ANOVA.png" alt="Principle of ANOVA">
+<img src="/assets/images/240930/Principle of ANOVA.png" alt="Principle of ANOVA">
 집단 내 변동은 동일 조건에서의 데이터 퍼짐이므로, 원래 존재하는 무작위 오차의 크기를 나타낸다. 반면, 집단 간 변동은 집단 간의 차이를 나타내며 집단 간 차이가 있다면 큰 데이터 퍼짐을, 차이가 없다면 집단 내 편차와 같은 정도로 작은 데이터 퍼짐을 기대할 수 있다.
 
 #### F분포
@@ -151,7 +151,7 @@ t검정과 분산분석에는 데이터가 분산이 같은 모집단으로부�
 F값을 계산하여 검정통계량을 만들고, 이 양은 귀무가설이 올바르다는 가정하에 F분포라는 분포를 따른다.
 
 F분포에서 관찰한 F값 이상으로 극단적인 값이 나올 확률이 p값이다.
-<img src="/public/img/240930/F Distribution.png" alt="분산분석의 검정통계량과 F분포">
+<img src="/assets/images/240930/F Distribution.png" alt="분산분석의 검정통계량과 F분포">
 
 ### 다중비교 검정
 
