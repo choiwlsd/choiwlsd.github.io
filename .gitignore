@@ -2,8 +2,8 @@
 *
 
 # exclude:
-!.gitignore
-!._config.yml
-!._pages
-!._posts/
-!._posts/*
+!gitignore
+!_config.yml
+!_pages
+!_posts/
+!_posts/*
