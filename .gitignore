@@ -1,2 +1,8 @@
 # ignore everything in this directory
 *
+
+# exclude:
+!.gitignore
+!._config.yml
+!._pages
+!._posts/
