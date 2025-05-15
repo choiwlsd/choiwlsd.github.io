@@ -16,6 +16,11 @@ rss: RSS
 # bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
 
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jemoji
+
 toc:
   enabled: true
   h_min: 1
@@ -67,8 +72,3 @@ page_width: 800px
 destination: ./_site
 incremental: false
 regenerate: true
-
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jemoji
