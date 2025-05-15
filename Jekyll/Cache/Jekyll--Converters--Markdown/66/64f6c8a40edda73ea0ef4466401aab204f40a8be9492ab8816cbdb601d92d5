@@ -1,0 +1,214 @@
+I"~!<h1 id="데이터의-성질에-맞는-검정-방법을-선택하는-것이-왜-중요한가">데이터의 성질에 맞는 검정 방법을 선택하는 것이 왜 중요한가?</h1>
+
+<h2 id="데이터의-특성">데이터의 특성</h2>
+
+<p>데이터의 성질에 맞는 통계 검정 방법들은 다양한 유형의 데이터 특성에 따라 선택되는데, 데이터의 특성에는 무엇이 있는지 조사해보았다.</p>
+
+<h3 id="1-정규성-normality">1. 정규성 Normality</h3>
+
+<p>데이터가 <strong>정규 분포(Normal Distribution)를 따르는지</strong> 여부를 나타낸다. 정규 분포는 대칭 분포로, 평균을 기준으로 좌우가 대칭적이고, 대부분의 데이터가 중앙에 집중되어 있으며, 양 끝으로 갈수록 값이 적어지는 분포를 의미한다.</p>
+
+<h3 id="2-독립성-independence">2. 독립성 Independence</h3>
+
+<p>독립성은 <strong>각 데이터가 서로 독립적으로 수집되었는가</strong>를 의미한다. 한 데이터 포인트가 다른 데이터 포인트에 영향을 미치지 않는 상태를 말하며, 독립성은 집단 간 비교 시 매우 중요하다.</p>
+
+<h3 id="3-등분산성-homogeneity-of-variances-homoscedasticity">3. 등분산성 Homogeneity of Variances, Homoscedasticity</h3>
+
+<p>등분산성은 <strong>여러 그룹 간의 분산이 동일한지</strong>를 나타낸다.</p>
+
+<h2 id="데이터에-따른-적절한-검정-방법">데이터에 따른 적절한 검정 방법</h2>
+
+<h3 id="normality-test">Normality Test</h3>
+
+<h4 id="정규-분포-데이터">정규 분포 데이터</h4>
+
+<ul>
+  <li>
+    <p><strong>t-검정 t-Test</strong></p>
+
+    <ul>
+      <li>“데이터가 정규 분포를 따르는 경우” 사용
+        <ul>
+          <li>t-검정은 표본 평균이 정규 분포를 따른다는 가정 하에 유의미한 차이가 있는지 평가하는 검정방법으로, 정규 분포 데이터에서 적절하게 작동한다.</li>
+          <li>정규성을 띄지 않는 데이터에서 t-검정을 사용하게 된다면 무의한 결과를 얻게 될 가능성이 크다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>분산분석 ANOVA, Analysis of Variance</strong></p>
+
+    <ul>
+      <li>“데이터가 정규 분포를 따르며, 여러 그룹 간의 평균 차이를 비교할 때” 사용한다.
+        <ul>
+          <li>분산분석은 다수의 집단 간의 평균 차이를 비교하며, 정규성 및 분산의 동질성 가정하에서 수행된다.</li>
+          <li>비정규 분포 데이터에서는 왜곡된 결과가 나올 수 있다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Q-Q Plot</strong></li>
+  <li><strong>샤피로-윌크 검정</strong></li>
+  <li><strong>콜모고로프-스미르노프(K-S) 검정</strong></li>
+</ul>
+
+<h4 id="비정규-분포-데이터">비정규 분포 데이터</h4>
+
+<ul>
+  <li>
+    <p><strong>비모수 검정 Non-parametric tests</strong></p>
+
+    <ul>
+      <li><strong>Mann-Whitney U 검정</strong>: 두 독립 집단 비교</li>
+      <li><strong>Wilcoxon 부호 순위 검정</strong>: 대응표본 비교</li>
+      <li><strong>Kruskal-Wallis 검정</strong>: 세 집단 이상 비교
+        <ul>
+          <li>비모수 검정은 정규 분포 가정이 필요 없고 순위 기반으로 검정을 수행한다.</li>
+          <li>데이터가 비정규 분포일 때 모수적 검정을 사용하면 유의미한 결과를 도출하지 못할 수 있기 때문에 비모수검정이 적절하다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>플리그너-폴리셀로 검정 Fligner-Plicello test</strong></li>
+  <li><strong>브루너-문첼 검정 Brunner-Munzel test</strong></li>
+  <li><strong>스틸-드와스 검정 Steel-Dwass test</strong></li>
+</ul>
+
+<h3 id="independence-test">Independence Test</h3>
+
+<h4 id="독립-데이터">독립 데이터</h4>
+
+<ul>
+  <li><strong>독립표본 t-검정</strong>
+    <ul>
+      <li>“두 집단의 데이터가 독립적일 때” 사용한다.
+        <ul>
+          <li>독립 표본 간 평균 차이를 비교하기 위한 검정이며, 각 표본 간 상호작용이 없다는 가정이 충족되어야 한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Mann-Whitney U 검정</strong>
+    <ul>
+      <li>비정규 분포 데이터의 독립 표본 비교</li>
+      <li>“두 독립 집단이 비정규 분포를 따를 때” 사용한다.
+        <ul>
+          <li>비모수적 방법이므로 비정규 분포 데이터에서도 정확한 결과를 제공한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="종속대응-데이터">종속(대응) 데이터</h4>
+
+<ul>
+  <li><strong>대응표본 t-검정 Paried t-test</strong>
+    <ul>
+      <li>“동일한 집단 내에서 사전-사후 데이터를 비교할 때” 사용한다.
+        <ul>
+          <li>두 표본이 동일 집단에서 나온 종속적인 데이터일 경우, 대응표본 t-검정이 종속성을 고려해 차이를 평가한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Wilcoxon 부호 순위 검정 (Wilcoxon Rank-Sum Test)</strong>
+    <ul>
+      <li>대응 데이터의 비정규 분포</li>
+      <li>“대응 표본이 비정규 분포를 따를 때” 사용한다.
+        <ul>
+          <li>비모수 검정은 정규성을 가정하지 않으므로, 데이터가 정규 분포가 아닐 때에도 적절하게 적용할 수 있다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="homoscedasticity-test">Homoscedasticity test</h3>
+
+<h4 id="분산이-동일한-경우">분산이 동일한 경우</h4>
+
+<ul>
+  <li>
+    <p><strong>ANOVA, Analysis of Variance</strong></p>
+
+    <ul>
+      <li>“여러 집단의 평균을 비교할 때, 각 그룹의 분산이 동일하다면” 분산분석을 사용한다.
+        <ul>
+          <li>분산분석은 집단 간 분산이 동일할 때 그룹간 차이를 정확하게 평가할 수 있다.</li>
+          <li>분산이 다를 경우에는 결과가 왜곡될 수 있다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>바틀렛 검정</strong></li>
+  <li><strong>레빈 검정</strong></li>
+</ul>
+
+<h4 id="분산이-다른-경우">분산이 다른 경우</h4>
+
+<ul>
+  <li><strong>Welch’s ANOVA</strong>
+    <ul>
+      <li>“여러 집단 간 평균을 비교하되, 분산이 다를 때” 사용한다.
+        <ul>
+          <li>웰치 검정은 분산의 동질성 가정을 하지 않기 때문에 분산이 다른 집단 간의 차이를 비교할 수 있다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Welch’s t-검정</strong>
+    <ul>
+      <li>“두 독립 집단의 분산이 다를 때” 사용한다.
+        <ul>
+          <li>일반 t-검정은 분산이 동일해야 하지만, Welch’s t-test는 분산이 다를 때에도 정확한 검정 결과를 제공한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="정규분포--독립-데이터">정규분포 + 독립 데이터</h3>
+
+<ul>
+  <li>두 독립 진단의 비교:
+    <ul>
+      <li>독립표본 t-검정 (Independent Samples t-test)
+        <ul>
+          <li>두 독립 집단 간 평균 차이를 비교할 때 사용한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>세 집단 이상의 비교:
+    <ul>
+      <li>ANOVA(분산분석, Analysis of Variance)
+        <ul>
+          <li>세 집단 이상의 평균 차이를 비교할 때 사용한다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="t-test와-welchs-t-test의-차이">t-Test와 Welch’s t-Test의 차이</h3>
+
+<p><img src="/public/img/241001/Diff of 2 t-test.png" alt="Difference between t-Test and Welch's t-Test" /></p>
+
+<p>위 그림에서의 기호들:</p>
+
+<ul>
+  <li>각각 집단 1과 집단 2의 표본 평균.</li>
+  <li>각각 집단 1과 집단 2의 표본 크기</li>
+  <li>sp: 두 집단의 합동 표준편차 Pooled Standard Deviation</li>
+  <li>s1^2, s2^2: 각각 집단 1과 집단 2의 표준 분산</li>
+</ul>
+
+<h4 id="welchs-t-test가-유리한-경우">Welch’s t-Test가 유리한 경우</h4>
+
+<ul>
+  <li>두 집단의 분산이 현저히 다를 때</li>
+  <li>두 집단의 표본 크기가 크게 다를 때</li>
+  <li>등분산성을 만족하지 않는 경우에도 검정의 유효성을 유지할 수 있기 때문에, 데이터 특성이 이분산성을 보일 가능이 있다면 Welch’s t-test를 사용하는 것이 일반적으로 더 안전하다.</li>
+</ul>
+:ET

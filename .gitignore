@@ -1,9 +1,11 @@
-# ignore everything in this directory
-*
+# Jekyll build outputs & cache
+_site/
+.gitbook/
+.jekyll-cache/
 
-# exclude:
-!gitignore
-!_config.yml
-!_pages
-!_posts/
-!_posts/*
+# Ruby / Bundler stuff
+vendor/bundle/
+
+# macOS, VSCode, etc.
+.DS_Store
+.vscode/
