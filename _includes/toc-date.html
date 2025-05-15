@@ -40,7 +40,8 @@
             <li class="divider"></li>
 
             <!-- 📌 고정 페이지 (About / Contact) -->
-            {% assign fixed_pages = site.pages | where_exp:"pg","pg.url == '/about/' or pg.url == '/contact/'" %}
+            {% assign fixed_pages = site.pages 
+                | where_exp:"pg","pg.url == '/about/' or pg.url == '/contact/'" %}
             {% for fp in fixed_pages %}
                 <li class="chapter{% if page.url == fp.url %} active{% endif %}">
                     <a href="{{ fp.url | relative_url }}">{{ fp.title }}</a>
