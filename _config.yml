@@ -70,5 +70,6 @@ regenerate: true
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-readme-index
   - jemoji
