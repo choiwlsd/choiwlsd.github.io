@@ -4,7 +4,7 @@ author: Jinyeong Choi
 date: 2025-05-15
 category: Jekyll
 layout: post
-permalink: /about/
+permalink: /pages/about/
 ---
 
 # Jinyeong Choi
