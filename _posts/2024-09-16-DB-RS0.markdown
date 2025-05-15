@@ -2,7 +2,7 @@
 layout: post
 title: "[DB & RS] Introduction"
 date: 2024-09-16
-category: [Data Business & Recommendation System]
+category: [Data Business]
 ---
 
 ## 공부할 내용
