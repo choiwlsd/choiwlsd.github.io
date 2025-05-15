@@ -56,12 +56,22 @@
                 </div>
             </div>
 
+            <!-- ① JSON 데이터만 담는 블록 -->
+            <script type="application/json" id="home-meta">
+            {%- include metadata-home.json.tpl -%}
+            </script>
+
+            <!-- ② 실제 자바스크립트 실행 블록 -->
             <script>
             var gitbook = gitbook || [];
-            gitbook.push(function() {
-                gitbook.page.hasChanged({%- include metadata-home.json.tpl -%});
+            gitbook.push(function () {
+                var homeMeta = JSON.parse(
+                document.getElementById('home-meta').textContent
+                );
+                gitbook.page.hasChanged(homeMeta);
             });
             </script>
+
         </div>
 
         {%- include footer.html -%}
