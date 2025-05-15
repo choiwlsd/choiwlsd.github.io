@@ -1,7 +1,7 @@
 ---
 layout: post # GitBook 테마 기본 레이아웃
 title: Categories
-permalink: /categories/
+permalink: /pages/categories/
 ---
 
 {% assign sorted = site.categories | sort %}

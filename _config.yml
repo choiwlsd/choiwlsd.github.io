@@ -23,7 +23,7 @@ plugins:
 
 nav:
   - title: 카테고리
-    url: /categories/
+    url: /pages/categories/
 
 toc:
   enabled: true
