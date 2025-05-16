@@ -53,23 +53,15 @@
                 </div>
             </div>
 
-            <!-- ① JSON 데이터만 담는 블록 -->
-            <script type="application/json" id="post-meta">
-            {%- include metadata-post.json.tpl -%}
-            </script>
-
-            <!-- ② 실제 실행되는 자바스크립트 -->
             <script>
-            var gitbook = gitbook || [];
-            gitbook.push(function () {
-                // 위 JSON 블록 읽어서 JS 객체로 변환
-                var postMeta = JSON.parse(
-                document.getElementById('post-meta').textContent
-                );
-
+                var gitbook = gitbook || [];
+                gitbook.push(function () {
+                var postMeta = JSON.parse(`{{ site.data | jsonify }}`);
                 gitbook.page.hasChanged(postMeta);
-            });
+                });
             </script>
+
+
         </div>
 
         {%- include footer.html -%}
