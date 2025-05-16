@@ -1,0 +1,8 @@
+---
+layout: post
+title: "[SQLD] 엔터티 Entity"
+date: 2025-05-16
+category: [SQLD]
+---
+
+# 엔티티 Entity
