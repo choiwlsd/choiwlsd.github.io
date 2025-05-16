@@ -43,24 +43,12 @@
                 </div>
             </div>
 
-            <!-- ① JSON 데이터만 담아두는 블록 (JS가 아니라서 린터가 무시) -->
-            <script type="application/json" id="page-meta">
-            {%- include metadata-home.json.tpl -%}
-            </script>
-
-            <!-- ② 실제 실행되는 자바스크립트 -->
             <script>
-            // gitbook 객체 준비
-            var gitbook = gitbook || [];
-            gitbook.push(function () {
-                // ①에서 넣어둔 JSON을 읽어 JS 객체로 변환
-                var pageMeta = JSON.parse(
-                document.getElementById('page-meta').textContent
-                );
-
-                // gitbook에 전달
-                gitbook.page.hasChanged(pageMeta);
-            });
+                var gitbook = gitbook || [];
+                gitbook.push(function () {
+                    var pageMeta = JSON.parse(`{% include metadata-home.json.tpl %}`);
+                    gitbook.page.hasChanged(pageMeta);
+                });
             </script>
 
         </div>
