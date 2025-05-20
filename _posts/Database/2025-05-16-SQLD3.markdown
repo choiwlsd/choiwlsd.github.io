@@ -132,3 +132,16 @@ category: [SQLD]
 #### 물리적 독립성 Physical data independence
 
 물리적 구조가 변경되어도(내부 스키마 변경) 개념/외부 스키마에 영향을 주지 않는 특성
+
+### 데이터 모델의 표기법(ERD: Entity Relationship Diagram)
+
+엔티티(Entity)와 엔티티 간의 관계(Relationship)를 시각적으로 표현한 다이어그램
+
+#### ERD 작성 절차
+
+1. Entity를 도출한 후 그린다
+2. Entity 배치
+3. Entity 간의 관계를 설정
+4. 관계명을 서술
+5. 관계의 참여도 기술
+6. 관계의 필수 여부를 확인
