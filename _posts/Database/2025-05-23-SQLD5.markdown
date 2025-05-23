@@ -1,0 +1,8 @@
+---
+layout: post
+title: "[SQLD] Attribute"
+date: 2025-05-23
+category: [SQLD]
+---
+
+# 속성 Attribute
