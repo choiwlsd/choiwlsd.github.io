@@ -1,0 +1,8 @@
+---
+layout: post
+title: "[SQLD] 정규화 기출문제"
+date: 2025-05-26
+category: [SQLD]
+---
+
+# 기출문제
