@@ -1,0 +1,16 @@
+---
+layout: post
+title: "[SQLD] 기출문제 풀이"
+date: 2025-05-26
+category: [SQLD]
+---
+
+# 기출문제
+
+### ESCAPE 문자
+
+```sql
+SELECT *
+FROM Mytest
+WHERE name LIKE '%@_%' ESCAPE '@'
+```

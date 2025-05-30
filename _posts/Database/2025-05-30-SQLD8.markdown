@@ -1,0 +1,8 @@
+---
+layout: post
+title: "[SQLD] Normalization2"
+date: 2025-05-30
+category: [SQLD]
+---
+
+# 정규화
