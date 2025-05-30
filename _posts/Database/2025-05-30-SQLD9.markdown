@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SQLD] 기출문제 풀이"
-date: 2025-05-26
+date: 2025-05-30
 category: [SQLD]
 ---
 
@@ -9,8 +9,76 @@ category: [SQLD]
 
 ### ESCAPE 문자
 
+SQL의 LIKE 구문을 사용해서 데이터 내부에 "\_"이 있는 것을 검색하는 것은?
+
 ```sql
 SELECT *
 FROM Mytest
 WHERE name LIKE '%@_%' ESCAPE '@'
 ```
+
+*는 기본적으로 와일드카드로 한 글자를 의미하기 때문에 **ESCAPE 문자**를 사용해서 문자 그대로 *를 처리해주고 \_가 있는 데이터를 찾는 쿼리를 작성한다.
+
+- `%`: 0개 이상의 임의의 문자
+- `_`: 1개 임의의 문자
+
+### 식별자
+
+식별자는 대표성에 따라 주식별자와 보조식별자로 분류되고 생성 여부에 따라서 내부 식별자와 외부 식별자로 분류된다. 또한 속성의 수에 따라서 단일 식별자와 복합 식별자로 분류된다.
+
+### SQL문
+
+#### 1
+
+```sql
+SELECT COUNT(COL1) AS RESULT
+FROM TAB1
+WHERE COL2 >= 30 GROUP BY COL1;
+```
+
+| COL1 | COL2 |
+| ---- | ---- |
+| A    | 10   |
+| B    | NULL |
+| B    | 20   |
+| NULL | 30   |
+| NULL | 40   |
+| C    | 20   |
+
+> 💡NULL이 count가 되는가? **NO!!!**
+
+| RESULT |
+| ------ |
+| 0      |
+
+#### 2
+
+다음 출력 결과를 얻기 위한 SQL 문장으로 가장 적절한 것은?
+
+<\EMP> <br>
+
+| EMPNO | ENAME  | MGR  | DEPTNO |
+| ----- | ------ | ---- | ------ |
+| 7369  | SMITH  | 7566 | 20     |
+| 7499  | ALLEN  | 7654 | 30     |
+| 7521  | WARD   | 7566 | 30     |
+| 7566  | JONES  | 7654 | 20     |
+| 7654  | MARTIN |      | 30     |
+
+<\결과> <br>
+
+| EMPNO | ENAME  | MANAGER_NAME |
+| ----- | ------ | ------------ |
+| 7369  | SMITH  | JONES        |
+| 7499  | ALLEN  | MARTIN       |
+| 7521  | WARD   | JONES        |
+| 7566  | JONES  | MARTIN       |
+| 7654  | MARTIN |              |
+
+```sql
+SELECT E1.EMPNO, E1.ENAME, E2.ENAME AS MANAGER_NAME
+FROM EMP E1, EMP E2
+WHERE E1.MGR = E2.EMPNO(+) ORDER BY E1.EMPNO;
+```
+
+SELECT절을 보면 E2.ENAME이 매니저이름이다. 따라서 E1의 MGR(매니저번호)을 갖는 E2에서의 EMPNO가 E1 사 원의 매니저라고 볼 수 있다. 또한, 매니저가 없는 MARTIN도 출력을 하기 위해서는 **LEFT OUTER JOIN**이 필요하므 로 오라클 표준으로 E1의 반대쪽 컬럼에 (+) 기호를 붙여주면 된다.
