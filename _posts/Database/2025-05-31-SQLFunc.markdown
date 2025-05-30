@@ -1,0 +1,22 @@
+---
+layout: post
+title: "[SQLD] SQL Function List"
+date: 2025-05-31
+category: [SQLD]
+---
+
+# dd
+
+| 함수     | 사용 형태                             | 내용                                                                   |
+| -------- | ------------------------------------- | ---------------------------------------------------------------------- |
+| NVL      | **NVL(A, B)**                         | A가 NULL이면 B, 아니면 A 반환                                          |
+| COALESCE | **COALESCE(A, B)**                    | NULL이 아닌 첫 번째 값을 반환                                          |
+| NULLIF   | **NULLIF(A, B)**                      | A와 B가 같으면 NULL 반환, 다르면 A 반환                                |
+| VARCHAR2 | **VARCHAR2(20)**                      | 가변 길이 문자 데이터를 저장하는 타입                                  |
+| CHAR     | **CHAR(5)**                           | 고정 길이 문자 데이터를 저장하는 타입(길이가 일정, 부족하면 공백 추가) |
+| DATE     | **DATE**                              | 날짜(ex. YYYY-MM-DD) 데이터를 저장하는 타입                            |
+| NUMBER   | **NUMBER(A, B)**                      | 숫자(정수, 소수 포함)를 저장하는 타입                                  |
+| SUBSTR   | **SUBSTR(STRING, A, B)**              | 문자열 STRING에서 특정 위치(A번째)부터 지정한 길이(B)만큼 잘라냄       |
+| EXTRACT  | **EXTRACT(A FROM DATE 'YYYY-MM-DD')** | 날짜에서 특정 부분(A = 연, 월, 일 등)을 추출                           |
+| CONCAT   | **CONCAT(STR1, STR2)**                | 문자열 2개를 연결/합침                                                 |
+| TRIM     | **TRIM(' A B ')**                     | 문자열에서 양쪽 끝 공백 또는 특정 문자 제거                            |
