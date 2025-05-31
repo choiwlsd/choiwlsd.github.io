@@ -77,6 +77,8 @@ ex. 엔티티와 속성, 인스턴스 등의 관계<br>
 
 ## 엔티티 표기법
 
+## ER Diagram, ERD
+
 ### ERD 작성 순서
 
 1. 엔티티를 그린다
@@ -85,3 +87,15 @@ ex. 엔티티와 속성, 인스턴스 등의 관계<br>
 4. 관계명을 기술한다
 5. 관계의 참여도를 기술한다
 6. 관계의 필수 여부를 기술한다
+
+### ERD Relationship
+
+ERD에서 Relationship에 표현되는 것: **관계명, 관계차수, 관계선택사양**<br>
+
+- **관계명**: 엔티티간 관계에 맺어진 형태
+- **관계차수**: 두 엔티티간 관계에서 수행되는 경우의 수
+  <img src="/assets/images/250530/ERD degree.png" alt='ERD degree'>
+
+- **관계선택사양 Optionality**: 관계에서 항상 참여하는지 아니면 참여할 수도 있는지를 방법에 따라 필수참여 관계(mandatory), 선택참여 관계(optional)로 나뉜다.
+
+<img src="/assets/images/250521/Various Entity.png" alt="Various Entity">
