@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[FE] 웹 에디더 개발자"
+title: "[FE] 웹 에디터 개발자"
 date: 2025-05-31
 category: [Frontend]
 ---
